@@ -123,7 +123,7 @@
 						</div>
 					</div>
 					<a class="dropdown-item" href="{{ route('admin-profile')}}">My Profile</a>
-					<a class="dropdown-item" href="settings.html">Settings</a>
+					<a class="dropdown-item" href="{{ URL::to('/admin/setting')}}">Settings</a>
 					<a class="dropdown-item" href="{{ URL::to('/logout')}}">Logout</a>
 				</div>
 			</li>
