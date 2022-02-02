@@ -758,7 +758,7 @@ a:hover {
   right: 0;
   width: 100%;
   z-index: 1040;
-  background-color: #ffffff;
+  background-color: #beb9b9;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   transition: all 0.6s ease;
@@ -1708,6 +1708,10 @@ footer .credits {
 
   .box-collapse {
     width: 50%;
+  }
+  .box-collapse-pharma {
+      width: 35%;
+    
   }
 
   .intro .owl-theme .owl-dots {

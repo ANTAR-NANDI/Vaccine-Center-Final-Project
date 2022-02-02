@@ -8,8 +8,8 @@
         <li class="submenu">
           <a href="#"><i class="fe fe-document"></i> <span> Pharmaceuticals </span> <span class="menu-arrow"></span></a>
           <ul style="display: none;">
-            <li> <a style="color:white" href="" data-toggle="modal" data-target="#modalContactForm">
-                Add Pharmaceutical</a></li>
+            <!-- <li> <a style="color:white" href="" data-toggle="modal" data-target="#modalContactForm">
+                Add Pharmaceutical</a></li> -->
             <li><a href="{{ URL::to('/admin/pharma-list')}}">Manage Pharmaceuticals</a></li>
 
           </ul>
@@ -17,16 +17,16 @@
         <li class="submenu">
           <a href="#"><i class="fe fe-document"></i> <span> Vaccine </span> <span class="menu-arrow"></span></a>
           <ul style="display: none;">
-            <li> <a href="" data-toggle="modal" data-target="#ModalPat1">
-                Add Vaccine</a></li>
+            <!-- <li> <a href="" data-toggle="modal" data-target="#ModalPat1">
+                Add Vaccine</a></li> -->
             <li><a href="{{ URL::to('/admin/vaccine-list')}}">Manage Vaccines</a></li>
           </ul>
         </li>
         <li class="submenu">
           <a href="#"><i class="fe fe-document"></i> <span>Patients</span> <span class="menu-arrow"></span></a>
           <ul style="display: none;">
-            <li> <a href="" data-toggle="modal" data-target="#ModalPat2">
-                Add Patient</a></li>
+            <!-- <li> <a href="" data-toggle="modal" data-target="#ModalPat2">
+                Add Patient</a></li> -->
             <li> <a href="{{ URL::to('/admin/patient-list')}}">Manage Patients</a></li>
 
           </ul>

@@ -1,5 +1,97 @@
     @extends('Admin.layouts.defaults')
     @section('abc')
+    <div class="click-closed"></div>
+    <!--/ Form Search Star /-->
+    <div class="box-collapse">
+        <div class="title-box-d">
+            <h3 class="title-d">Search Property</h3>
+        </div>
+        <span class="close-box-collapse right-boxed ion-ios-close"></span>
+        <div class="box-collapse-wrap form">
+            <form class="form-a">
+                <div class="row">
+                    <div class="col-md-12 mb-2">
+                        <div class="form-group">
+                            <label for="Type">Vaccine Name</label>
+                            <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="Type">Provider Name</label>
+                            <select class="form-control form-control-lg form-control-a" id="Type">
+                                <option>Sk+F</option>
+                                <option>Incepta</option>
+                                <option>Beximco</option>
+                                <option>Square</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="city">City</label>
+                            <select class="form-control form-control-lg form-control-a" id="city">
+                                <option>All City</option>
+                                <option>Alabama</option>
+                                <option>Arizona</option>
+                                <option>California</option>
+                                <option>Colorado</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="bedrooms">Bedrooms</label>
+                            <select class="form-control form-control-lg form-control-a" id="bedrooms">
+                                <option>Any</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="garages">Garages</label>
+                            <select class="form-control form-control-lg form-control-a" id="garages">
+                                <option>Any</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="bathrooms">Bathrooms</label>
+                            <select class="form-control form-control-lg form-control-a" id="bathrooms">
+                                <option>Any</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-2">
+                        <div class="form-group">
+                            <label for="price">Min Price</label>
+                            <select class="form-control form-control-lg form-control-a" id="price">
+                                <option>Unlimite</option>
+                                <option>$50,000</option>
+                                <option>$100,000</option>
+                                <option>$150,000</option>
+                                <option>$200,000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-b">Search Property</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
     <!-- Page Wrapper -->
     <div class="page-wrapper">
         <!-- Breadcrumb -->
@@ -18,8 +110,11 @@
                     <div class="col-md-4 col-4">
 
                     </div>
-                    <div class="col-md-2 col-2">
+                    <!-- <div class="col-md-2 col-2">
                         <a style="margin-top: 5px;" href=" #" class="add-new-btn" data-toggle="modal" data-target="#ModalPat1">Add Vaccine</a>
+                    </div> -->
+                    <div class="col-md-2 col-2">
+                        <a style="margin-top: 5px;" href=" #" class="add-new-btn navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">Add Vaccine</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +146,7 @@
                                                     <tr>
                                                         <th>SL. No.</th>
                                                         <th>Vaccine Name</th>
-                                                        <th>Provider Company</th>
+                                                        <th>Supplier</th>
                                                         <th>Manufactured Date</th>
                                                         <th>Expiry Date</th>
                                                         <th>Price</th>

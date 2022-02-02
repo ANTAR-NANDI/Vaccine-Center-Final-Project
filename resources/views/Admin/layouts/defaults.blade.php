@@ -12,11 +12,12 @@
   @include('Admin.includes.sidebar')
 
   @yield('abc')
+</div>
 
-
-  @include('Admin.includes.modal')
-  </div>
+  <!-- @include('Admin.includes.modal') -->
   @include('Admin.includes.footer')
+
+
 
 </body>
 
