@@ -758,7 +758,7 @@ a:hover {
   right: 0;
   width: 100%;
   z-index: 1040;
-  background-color: #beb9b9;
+  background-color: #dcf0e9;
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   transition: all 0.6s ease;

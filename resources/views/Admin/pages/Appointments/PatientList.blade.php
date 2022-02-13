@@ -1,5 +1,75 @@
 @extends('Admin.layouts.defaults')
 @section('abc')
+<div class="click-closed"></div>
+<!--/ Form Search Star /-->
+<div class="box-collapse">
+    <div class="title-box-d">
+        <h3 class="title-d">Add Vaccine</h3>
+    </div>
+    <span class="close-box-collapse right-boxed ion-ios-close"></span>
+    <div class="box-collapse-wrap form">
+        <form class="form-a">
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <div class="form-group">
+                        <label for="Type">Vaccine Name</label>
+                        <input type="text" class="form-control form-control-lg form-control-a" placeholder="Vaccine Name">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label for="Type">Provider Name</label>
+                        <select class="form-control form-control-lg form-control-a" id="Type">
+                            <option>Sk+F</option>
+                            <option>Incepta</option>
+                            <option>Beximco</option>
+                            <option>Square</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label for="Type">Quantity</label>
+                        <input type="number" class="form-control form-control-lg form-control-a" placeholder="Enter Quantity">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label for="Type">Price</label>
+                        <input type="number" class="form-control form-control-lg form-control-a" placeholder="Enter Price">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label for="Type">Discount</label>
+                        <input type="number" class="form-control form-control-lg form-control-a" placeholder="Enter Price">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label for="Type">Purchased Date</label>
+                        <input type="date" class="form-control form-control-lg form-control-a" placeholder="Enter Price">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label for="Type">Manufactured Date</label>
+                        <input type="date" class="form-control form-control-lg form-control-a" placeholder="Enter Price">
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group">
+                        <label for="Type">Expired Date</label>
+                        <input type="date" class="form-control form-control-lg form-control-a" placeholder="Enter Price">
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <button type="submit" class="btn btn-b">Add Vaccine</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 <div class="page-wrapper">
     <div class="breadcrumb-bar">
         <div class="container-fluid">
@@ -17,7 +87,7 @@
 
                 </div>
                 <div class="col-md-2 col-2">
-                    <a style="margin-top: 5px;" href=" #" class="add-new-btn" data-toggle="modal" data-target="#ModalPat2">Add Patient</a>
+                    <a style="margin-top: 5px;padding:10px" href=" #" class="add-new-btn text-center navbar-toggle-box-collapse d-none d-md-block" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-expanded="false">Add Patient</a>
                 </div>
             </div>
         </div>
@@ -50,7 +120,7 @@
                                     <div class="card card-table mb-0">
                                         <div class="card-body">
                                             <div class="table-responsive">
-                                                <table class="table table-hover table-center mb-0">
+                                                <table class="table table-hover table-center mb-0" id="example1">
                                                     <thead>
                                                         <tr>
                                                             <th>Serial No.</th>
@@ -514,4 +584,25 @@
     </div>
 </div>
 </div>
+<script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('#example1').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
+            ]
+        });
+        
+    });
+
+    function showName() {
+        var name = document.getElementById('csv');
+        document.getElementById('successInsert').innerHTML = 'Selected file: ' + name.files.item(0).name;
+    };
+</script>
+
 @stop
