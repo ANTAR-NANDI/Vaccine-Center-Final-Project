@@ -31,7 +31,11 @@ Route::prefix('admin/')->group(function () {
     Route::get('profile', [AdminController::class, 'Profile'])->name('admin-profile');
     //Pharmaceuticals Routes 
     Route::get('add-pharma', [PharmaceuticalController::class, 'AddPharma'])->name('admin-add-pharma');
+    Route::post('pharmastore', [PharmaceuticalController::class, 'pharmastore'])->name('pharmastore');
     Route::get('pharma-list', [PharmaceuticalController::class, 'PharmaList'])->name('admin-pharma-list');
+    Route::get('UpdatePharmaList/{id}', [PharmaceuticalController::class, 'UpdatePharmaList']);
+    Route::get('admin-delete-category/{id}', [PharmaceuticalController::class, 'delete']);
+    Route::post('updateemployee/{id}', [PharmaceuticalController::class, 'updateemployee']);
     //Vaccine Routes 
     Route::get('add-vaccine', [VaccineController::class, 'AddVaccine'])->name('admin-add-vaccine');
     Route::get('vaccine-list', [VaccineController::class, 'VaccineList'])->name('admin-vaccine-list');

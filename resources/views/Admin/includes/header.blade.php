@@ -1,4 +1,4 @@
-<div class="main-wrapper">
+
 
 	<!-- Header -->
 	<div class="header">

@@ -6,15 +6,14 @@
 </head>
 
 <body>
+  <div class="main-wrapper t">
 
-  @include('Admin.includes.header')
+    @include('Admin.includes.header')
 
-  @include('Admin.includes.sidebar')
+    @include('Admin.includes.sidebar')
 
-  @yield('abc')
-</div>
-
-  <!-- @include('Admin.includes.modal') -->
+    @yield('abc')
+  </div>
   @include('Admin.includes.footer')
 
 

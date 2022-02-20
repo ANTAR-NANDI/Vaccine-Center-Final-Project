@@ -5,7 +5,7 @@
 <script src="{{ asset('Admin/plugins/slimscroll/jquery.slimscroll.min.js')}}"></script>
 <script src="{{ asset('Admin/plugins/raphael/raphael.min.js')}}"></script>
 <script src="{{ asset('Admin/plugins/morris/morris.min.js')}}"></script>
-<script src="{{ asset('Admin/js/chart.morris.js')}}"></script>
+<!-- <script src="{{ asset('Admin/js/chart.morris.js')}}"></script> -->
 <script src="{{ asset('Admin/js/script.js')}}"></script>
 
 <!-- Real EstateJavaScript Libraries -->
@@ -17,7 +17,7 @@
 <script src="{{ asset('lib/owlcarousel/owl.carousel.min.js')}}"></script>
 <script src="{{ asset('lib/scrollreveal/scrollreveal.min.js')}}"></script>
 <script src="{{ asset('contactform/contactform.js')}}"></script>
-<script src="{{ asset('js/main.js')}}"></script>')}}
+<script src="{{ asset('js/main.js')}}"></script>
 
 <!--/ Nav End /-->
 <!-- JavaScript Libraries -->
